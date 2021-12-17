@@ -1,0 +1,176 @@
+.shortenerBox-container {
+    background-color: var(--LigthGray);
+
+    padding-bottom: 75px;
+}
+
+.shortenerBox {
+    margin: 0 var(--WidthMargin);
+}
+
+/*Input-url*/
+.shortenerBox-inputUrl-container {
+    position: relative;
+    top: -75px;
+
+    border-radius: 10px;
+    background-image: url(bg-shorten-desktop.svg);
+    background-color: var(--DarkViolet);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.shortenerBox-inputUrl {
+    margin: 0 4vw;
+    display: grid;
+    grid-template-areas:
+        'input button'
+        'error-message error-message'
+    ;
+    grid-template-columns: 80% 15%;
+    grid-template-rows: 1fr min-content;
+    gap: 3%;
+
+}
+
+.shortenerBox-inputUrl input {
+    grid-area: input;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.shortenerBox-inputUrl .input-error {
+    border: 2px solid var(--Red);
+}
+
+.shortenerBox-inputUrl .input-error::placeholder {
+    color: var(--Red);
+}
+
+.shortenerBox-inputUrl button {
+    grid-area: button;
+    border-radius: 5px;
+}
+
+.shortenerBox-inputUrl P {
+    grid-area: error-message;
+    color: var(--Red);
+    font-size: 0.75rem;
+    font-style: italic;
+    line-height: 0.75rem;
+    margin-bottom: 0;
+
+}
+
+
+/*Output ourl*/
+
+.shortenerBox-outputUrl-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto-fit, 100%);
+    gap: 10px;
+}
+
+.shortenerBox-outputUrl {
+    background: #fff;
+    padding: 0 4vw;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% minmax(30%, 1fr) min-content;
+    grid-template-rows: 100%;
+    gap: 2vw;
+}
+
+.shortenerBox-outputUrl p {
+    text-align: left;
+}
+
+.shortenerBox-outputUrl-result {
+    text-align: right;
+    place-self: center right;
+}
+
+.shortenerBox-outputUrl .button-outputUrl-copy {
+    height: min-content;
+    padding: 5px 25px;
+    place-self: center;
+    border-radius: 5px;
+}
+
+.shortenerBox-outputUrl .button-outputUrl-copied {
+    height: min-content;
+    padding: 5px 25px;
+    place-self: center;
+    border-radius: 5px;
+    background: var(--DarkViolet);
+}
+
+@media (max-width:775px) {
+
+    /*Input url*/
+    .shortenerBox-inputUrl-container {
+        background-image: url(bg-shorten-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .shortenerBox {
+        margin: 0 var(--ResponsiveWidthMargin);
+    }
+
+    .shortenerBox-inputUrl {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 7vw;
+    }
+
+    .shortenerBox-inputUrl button {
+        padding: 15px;
+    }
+
+    .shortenerBox-inputUrl p {
+        margin: 0 0 5px 0;
+    }
+
+    /*Output url*/
+
+    .shortenerBox-outputUrl {
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content min-content;
+    }
+
+    .shortenerBox-outputUrl p {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--Gray);
+    }
+
+    .shortenerBox-outputUrl nav {
+        place-self: center left;
+        margin: 10px 0;
+    }
+    
+    .shortenerBox-outputUrl .button-outputUrl-copy{
+        place-self: auto;
+        padding: 5px 0;
+        margin: 0px 0 15px;
+    }
+    
+    .shortenerBox-outputUrl .button-outputUrl-copied{
+        place-self: auto;
+        padding: 5px 0;
+        margin: 0px 0 15px;
+    }
+
+
+}

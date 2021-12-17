@@ -1,55 +1,60 @@
-.presentation-container{
-padding-bottom: 20vw;
-overflow: hidden;
+.presentation-container {
+    padding-bottom: 200px;
+    overflow: hidden;
 }
-.presentation{
-    margin: 0px var(--WidthMargin)  ;
+
+.presentation {
+    margin: 0px var(--WidthMargin);
     display: flex;
 }
 
-.presentation-img{
+.presentation-img {
     width: 50%;
     height: 100%;
 }
 
-.presentation-info{
+.presentation-info {
     width: 50%;
 }
-.presentation-info h1{
+
+.presentation-info h1 {
     font-size: 4rem;
     line-height: 4rem;
     color: var(--VeryDarkBlue);
 
-    margin: 5vw 0  15px 0;
+    margin: 5vw 0 15px 0;
 }
 
-.presentation-info p{
+.presentation-info p {
     font-size: 1rem;
     color: var(--GrayishViolet);
 
 }
 
-.button-getStarted{
+.button-getStarted {
     padding: 10px 25px;
     border-radius: 20px;
 }
 
-@media ( max-width:775px) {
-    .presentation{
+@media (max-width:775px) {
+    .presentation-container{
+        padding-bottom: 150px;
+    }
+    .presentation {
         flex-direction: column-reverse;
-        margin: 0px var(--ResponsiveWidthMargin)  ;
+        margin: 0px var(--ResponsiveWidthMargin);
     }
 
-    .presentation-img{
+    .presentation-img {
         width: 100%;
     }
 
-    .presentation-info{
+    .presentation-info {
         width: 100%;
         text-align: center;
     }
 
-    .presentation-info h1{
+    .presentation-info h1 {
         font-size: 2.5rem;
         line-height: 2.5rem;
     }

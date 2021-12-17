@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="237"
+   height="128"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="bg-shorten-mobile.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1624473"
+     inkscape:cx="161.29763"
+     inkscape:cy="4.7313973"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill="#4b3f6b"
+     fill-rule="evenodd"
+     d="m -49.034481,-69.744325 c 0,52.724 15.5,90.486 73,114.877 57.499998,24.390999 113.055011,2.134 168.786011,14.894 55.731,12.759999 55.731,94.961995 108.214,145.548995 52.483,50.587 163.142,62.874 253.12,11.552 89.975,-51.322 130.764,-171.151995 103.88,-241.806995 -26.885,-70.656 -78.407,-135.141005 -327,-135.141005 -248.593013,0 -380.000011,37.353 -380.000011,90.076005 z"
+     id="path2" />
+</svg>
