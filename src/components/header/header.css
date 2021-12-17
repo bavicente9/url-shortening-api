@@ -40,7 +40,7 @@
     cursor: pointer;
     color: var(--GrayishViolet);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: var(--FontFamily);
 
 }
@@ -65,42 +65,31 @@
     color: var(--GrayishViolet);
     font-weight: 500;
 
-    font-size: 16px;
-
 }
 
 .login-button:hover {
     color: var(--VeryDarkBlue);
+    background: none;
 }
 
 .signUp-button {
-    background: var(--DarkCyan);
-    border: none;
     border-radius: 25px;
     padding: 5px 20px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.signUp-button:hover {
-    background-color: var(--Cyan);
 }
 
 
 @media (max-width: 775px) {
-    .header-container {
-    }
 
 
     .menu-container {
         display: none;
     }
 
-    
+
     .responsive-menu-container {
         display: inline;
     }
-    
+
     #main-logo {
         margin-left: var(--ResponsiveWidthMargin);
     }
@@ -112,13 +101,13 @@
         width: 30px;
         cursor: pointer;
     }
-    
+
     #button-hamburger img{
         width: 100%;
         height: 100%;
         object-fit: fill;
     }
-    
+
 
     /*menu options*/
     #responsive-menu-options {
@@ -131,7 +120,7 @@
 
         border-radius: 10px;
     }
-    
+
     #responsive-menu-options ul{
         list-style: none;
         padding: 20px 0px;
@@ -139,18 +128,18 @@
         text-align: center;
         border-bottom: 1px solid var(--GrayishViolet);
     }
-    
+
     #responsive-menu-options ul li{
         color: var(--Gray);
         padding: 10px;
         cursor: pointer;
         border-radius: 20px;
-        
+
     }
     #responsive-menu-options ul li:hover{
         background-color: var(--VeryDarkViolet);
     }
-    
+
     #responsive-menu-options .log-buttons{
         display: flex;
         flex-direction: column;
@@ -159,9 +148,9 @@
         margin: 20px;
         margin-top: 0;
         padding: 20px 0;
-        
+
     }
-    
+
     #responsive-menu-options .log-buttons .login-button,#responsive-menu-options .log-buttons .signUp-button{
         border-radius: 20px;
         padding: 10px;

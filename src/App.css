@@ -24,15 +24,28 @@
   --FontFamily: 'Poppins', sans-serif;
 } 
 
+
+/*General styles*/
+
 *{
   font-family: var(--FontFamily);
 }
 button{
   cursor: pointer;
+  background-color: var(--DarkCyan);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
 }
 
+button:hover{
+  background-color: var(--Cyan);
+}
+
+
+
+
 .presentation{
-  background-color: blueviolet;
 }
 .features{
   background-color: brown;
