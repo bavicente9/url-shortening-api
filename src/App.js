@@ -1,8 +1,11 @@
 import logo from './logo.svg';
+import 'normalize.css'
 import './App.css';
 import { Header } from './components/header/Header';
 import {Presentation} from './components/presentation/Presentation'
 import { ShortenerBox } from './components/ShortenerBox/ShortenerBox';
+
+
 function App() {
   return (
     <div>

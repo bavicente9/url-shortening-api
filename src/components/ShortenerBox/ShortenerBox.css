@@ -1,6 +1,5 @@
 .shortenerBox-container {
     background-color: var(--LigthGray);
-
     padding-bottom: 75px;
 }
 
@@ -17,7 +16,7 @@
     background-image: url(bg-shorten-desktop.svg);
     background-color: var(--DarkViolet);
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 ;
 }
 
 .shortenerBox-inputUrl {
@@ -54,6 +53,7 @@
     border-radius: 5px;
 }
 
+
 .shortenerBox-inputUrl P {
     grid-area: error-message;
     color: var(--Red);
@@ -61,7 +61,8 @@
     font-style: italic;
     line-height: 0.75rem;
     margin-bottom: 0;
-
+    
+    display: none;
 }
 
 
@@ -70,42 +71,60 @@
 .shortenerBox-outputUrl-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(auto-fit, 100%);
+    grid-template-rows: repeat(2, min-content);
     gap: 10px;
+    padding: 0;
 }
 
 .shortenerBox-outputUrl {
+    padding: 10px 25px;
     background: #fff;
-    padding: 0 4vw;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 50% minmax(30%, 1fr) min-content;
+    grid-template-columns: minmax(25% ,1fr) 25% min-content;
     grid-template-rows: 100%;
     gap: 2vw;
 }
 
 .shortenerBox-outputUrl p {
-    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .shortenerBox-outputUrl-result {
+    display: flex;
+    align-items: center;
+
     text-align: right;
-    place-self: center right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.shortenerBox-outputUrl a {
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--DarkCyan);
+    overflow: hidden;
+}
+.buttons-outputUrl{
+    display: grid;
+    place-items: center;
+
 }
 
-.shortenerBox-outputUrl .button-outputUrl-copy {
-    height: min-content;
-    padding: 5px 25px;
+.shortenerBox-outputUrl .button-outputUrl-copy,.shortenerBox-outputUrl .button-outputUrl-copied {
+    width:140px ;
+    padding: 15px 25px;
     place-self: center;
     border-radius: 5px;
+
 }
+
 
 .shortenerBox-outputUrl .button-outputUrl-copied {
-    height: min-content;
-    padding: 5px 25px;
-    place-self: center;
-    border-radius: 5px;
+    display: none;
     background: var(--DarkViolet);
+
 }
 
 @media (max-width:775px) {
@@ -150,27 +169,17 @@
         height: 100%;
         margin: 10px 0px;
         text-align: left;
-        display: flex;
-        align-items: center;
         border-bottom: 1px solid var(--Gray);
     }
 
     .shortenerBox-outputUrl nav {
-        place-self: center left;
-        margin: 10px 0;
-    }
-    
-    .shortenerBox-outputUrl .button-outputUrl-copy{
-        place-self: auto;
-        padding: 5px 0;
-        margin: 0px 0 15px;
-    }
-    
-    .shortenerBox-outputUrl .button-outputUrl-copied{
-        place-self: auto;
-        padding: 5px 0;
-        margin: 0px 0 15px;
+        padding: 20px 0;
     }
 
+    .shortenerBox-outputUrl .button-outputUrl-copy, .shortenerBox-outputUrl .button-outputUrl-copied{
+        place-self: auto;
+        margin: 0px 0 15px;
+        width: 100%;
+    }
 
 }
