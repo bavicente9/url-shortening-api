@@ -57,7 +57,7 @@ export const OutputUrl = ({ urlList }) => {
             {
                 urlList.map((item, index) => {
                     return (
-                        <LiOutputUrl index={index} item={item} handleCopyShortUrl = {handleCopyShortUrl} />
+                        <LiOutputUrl key={index} index={index} item={item} handleCopyShortUrl = {handleCopyShortUrl} />
                     )
                 })
             }
