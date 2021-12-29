@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import { OutputUrl } from "../components/ShortenerBox/outputUrl/OutputUrl";
-import { OutputUrl } from "../components/ShortenerBox/ShortenerBox";
 const urlList =
     [
         {

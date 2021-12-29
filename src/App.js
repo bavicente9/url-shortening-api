@@ -4,6 +4,7 @@ import './App.css';
 import { Header } from './components/header/Header';
 import {Presentation} from './components/presentation/Presentation'
 import { ShortenerBox } from './components/ShortenerBox/ShortenerBox';
+import { Features } from './components/features/Features';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <Header />
       <Presentation />
       <ShortenerBox />
-      <div className='features'>Features</div>
+      <Features />
       <div className='footer'>footer</div>
     </div>
   );

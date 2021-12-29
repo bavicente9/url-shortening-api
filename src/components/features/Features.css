@@ -1,0 +1,124 @@
+.features-Container {
+    background-color: var(--LigthGray);
+    padding: 0 0 100px;
+}
+
+.features {
+    margin: 0 var(--WidthMargin);
+}
+
+.features-Header {
+    text-align: center;
+}
+
+.features-Header h1 {
+    margin-top: 0;
+}
+
+.features-Header p {
+    color: var(--Gray);
+}
+
+.features-Elements {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(325px, 350px));
+    grid-template-rows: repeat(auto-fit, 350px);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+
+/*blue bar*/
+.feature-BlueBar {
+    background-color: var(--Cyan);
+    width: 70%;
+    max-width: 1500px;
+    height: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 15%;
+}
+
+/*Positions of the features*/
+.feature:nth-child(2) {
+    align-self: start;
+}
+
+.feature:nth-child(4) {
+    align-self: end;
+}
+
+/**/
+.feature {
+    min-width: 325px;
+    width: 100%;
+    height: 270px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+
+}
+
+.feature-Info {
+    margin: -10px 25px 0;
+}
+
+.feature-Info h2 {
+    margin-top: 0;
+}
+
+.feature-Info p {
+    color: var(--Gray);
+}
+
+/*Icon size and position*/
+.feature .icon-Container {
+    margin: 0 25px;
+    display: grid;
+    place-content: center;
+
+    background-color: var(--VeryDarkBlue);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+
+    position: relative;
+    top: -45px;
+}
+
+.feature .icon-Container img {
+    width: 40px;
+    height: 40px;
+}
+
+/*minimum width to see the featers nice*/
+@media (max-width:1150px){
+    
+    .features-Elements{
+        grid-template-columns: minmax(325px, 350px);
+        grid-template-rows: repeat(auto-fit, 270px);
+        gap: 100px 0;
+    }
+
+    /*Blue bar*/
+    .feature-BlueBar{
+        height: 70%;
+        width: 10px;
+        z-index: 5;
+        top: 15%;
+        left:calc(50% - 5px);
+    }
+
+    /*icon position*/
+
+    .feature .icon-Container{
+        margin: 0;
+        left: calc(50% - 45px);
+    }
+    
+}
