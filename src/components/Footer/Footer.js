@@ -6,27 +6,27 @@ export const Footer = () => {
         <footer className='footer-Container'>
             <div className='footer'>
                 <div id='footer-Logo'>
-                    <img src={logo}></img>
+                    <img alt='' src={logo}></img>
                 </div>
 
                 <div className='footer-Info'>
                     <ul>
                         <h3>Feautures</h3>
-                        <li><a>Link Shortening</a></li>
-                        <li><a>Branded Links</a></li>
-                        <li><a>Analytics</a></li>
+                        <li><a href=''>Link Shortening</a></li>
+                        <li><a href=''>Branded Links</a></li>
+                        <li><a href=''>Analytics</a></li>
                     </ul>
                     <ul>
                         <h3>Resources</h3>
-                        <li><a>Blog</a></li>
-                        <li><a>Developers</a></li>
-                        <li><a>Support</a></li>
+                        <li><a href=''>Blog</a></li>
+                        <li><a href=''>Developers</a></li>
+                        <li><a href=''>Support</a></li>
                     </ul>
                     <ul>
                         <h3>About</h3>
-                        <li><a>Our Team</a></li>
-                        <li><a>Careers</a></li>
-                        <li><a>Contact</a></li>
+                        <li><a href=''>Our Team</a></li>
+                        <li><a href=''>Careers</a></li>
+                        <li><a href=''>Contact</a></li>
                     </ul>
                 </div>
                 <div className='footer-social-media'>
