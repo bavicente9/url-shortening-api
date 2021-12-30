@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,200&display=swap');
-:root{
+
+:root {
   /* Primary*/
 
   --Cyan: hsl(180, 80%, 70%);
@@ -10,38 +11,42 @@
 
   --Red: hsl(0, 87%, 67%);
 
-   /* Neutral*/
-  --LigthGray:hsl(0, 0%, 95%);;
+  /* Neutral*/
+  --LigthGray: hsl(0, 0%, 95%);
+  ;
   --Gray: hsl(0, 0%, 75%);
   --GrayishViolet: hsl(257, 7%, 63%);
   --VeryDarkBlue: hsl(255, 11%, 22%);
   --VeryDarkViolet: hsl(260, 8%, 14%);
 
-  --WidthMargin:11.5vw;
-  --ResponsiveWidthMargin:5vw;
+  --WidthMargin: 11.5vw;
+  --ResponsiveWidthMargin: 5vw;
 
   --FontFamily: 'Poppins', sans-serif;
-} 
+}
 
 
 /*General styles*/
 
-*{
+* {
   font-family: var(--FontFamily);
 }
-p{
+
+p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-button{
+
+button {
   cursor: pointer;
   background-color: var(--DarkCyan);
-    border: none;
-    color: #fff;
-    font-size: 1rem;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: var(--Cyan);
 }
 
@@ -50,17 +55,5 @@ button:hover{
   padding: 20px 40px;
   border-radius: 50px;
 }
+
 /**/
-
-
-.footer{
-  background-color: cadetblue;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

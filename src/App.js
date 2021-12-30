@@ -6,6 +6,7 @@ import {Presentation} from './components/presentation/Presentation'
 import { ShortenerBox } from './components/ShortenerBox/ShortenerBox';
 import { Features } from './components/features/Features';
 import { PanelGetStarted } from './components/panelGetStarted/PanelGetStarted';
+import { Footer } from './components/Footer/Footer';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <ShortenerBox />
       <Features />
       <PanelGetStarted />
-      <div className='footer'>footer</div>
+      <Footer />
     </div>
   );
 }
