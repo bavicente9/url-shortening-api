@@ -26,7 +26,7 @@ export const Header = ()=> {
     return (
         <div className='header-container'>
             <div id='main-logo'>
-                <img src={logo}></img>
+                <img alt='' src={logo}></img>
             </div>
 
             <nav className='menu-container'>
