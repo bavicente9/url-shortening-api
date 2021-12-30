@@ -1,0 +1,105 @@
+.footer-Container {
+    background-color: var(--VeryDarkBlue);
+    padding: 50px 0;
+}
+
+.footer {
+    margin: 0 var(--WidthMargin);
+    display: grid;
+    grid-template-columns: minmax(10%, 1fr) minmax(-webkit-min-content, 2fr) -webkit-min-content;
+    grid-template-columns: minmax(10%, 1fr) minmax(min-content, 2fr) min-content;
+    grid-template-rows: 100%;
+    gap: 100px;
+}
+
+/*list*/
+.footer-Info {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.footer-Info ul {
+    margin-top: 0;
+}
+
+.footer-Info ul h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.footer-Info ul li {
+    list-style: none;
+    color: var(--Gray);
+    cursor: pointer;
+    line-height: 2rem;
+}
+
+.footer-Info ul li :hover {
+    color: var(--Cyan);
+}
+
+/*Buttons social media*/
+.footer-social-media {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-social-media__button {
+    background: none;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+
+}
+
+.footer-social-media__button:hover {
+    background-color: transparent;
+}
+
+.button-facebook {
+    background-image: url(./icon-facebook.svg);
+}
+
+.button-twitter {
+    background-image: url(./icon-twitter.svg);
+}
+
+.button-pinterest {
+    background-image: url(./icon-pinterest.svg);
+}
+
+.button-instagram {
+    background-image: url(./icon-instagram.svg);
+}
+
+@media (max-width:1150px) {
+    .footer {
+        margin: 0 var(--ResponsiveWidthMargin);
+        gap: 25px;
+    }
+
+    .footer-Info {
+        gap: 10px;
+    }
+}
+
+@media (max-width:775px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-Info {
+        flex-direction: column;
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    .footer-Info ul {
+        padding: 0;
+    }
+
+}

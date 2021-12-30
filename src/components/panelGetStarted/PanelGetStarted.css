@@ -1,0 +1,22 @@
+.PanelGetStarted-Container{
+    background-color: var(--VeryDarkBlue);
+    background-image: url(./bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 50px 0;
+    
+    text-align: center;
+    
+}
+
+.PanelGetStarted-Container h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+@media (max-width: 775px){
+    .PanelGetStarted-Container{
+        background-image: url(./bg-boost-mobile.svg);
+    }
+}

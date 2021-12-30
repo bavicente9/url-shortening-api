@@ -31,10 +31,6 @@
 
 }
 
-.button-getStarted {
-    padding: 10px 25px;
-    border-radius: 20px;
-}
 
 @media (max-width:775px) {
     .presentation-container{
