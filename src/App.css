@@ -45,6 +45,11 @@ button:hover{
   background-color: var(--Cyan);
 }
 
+.button-getStarted {
+  font-size: 1.3rem;
+  padding: 20px 40px;
+  border-radius: 50px;
+}
 /**/
 
 
